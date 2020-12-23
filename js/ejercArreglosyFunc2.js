@@ -16,9 +16,7 @@ do {
     ciudades[i] = ciudad;
     i++;
 } while (confirm("Desea continuar ingresando una cadena?"));
-
-// && (ciudad == "0")
-
+// && (ciudad != "0")
 
 // mostrar arreglo generado
 document.write("<h4>Las Ciudades Ingresadas son:</h4><br>");

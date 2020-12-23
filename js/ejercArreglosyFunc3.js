@@ -5,16 +5,14 @@
 //  repitiendo 50 veces esta operación.
 
 
+// math.random() devuelve valores entre 0 y 0.99999. la multiplico por 6 para que de valores hasta 5,
+// y le sumo 1 para que sean valores entre 1 y 6
+
 let arraySuma = []
-
 for (let i = 0; i < 50; i++) {
-    let dado1 = parseInt(6 * math.random() + 1);
-    let dado2 = parseInt(6 * math.random() + 1);
-
-    document.write("dado1: " + dado1);
-    document.write("dado2: " + dado2);
+    let dado1 = parseInt(6 * Math.random() + 1);
+    let dado2 = parseInt(6 * Math.random() + 1);
     arraySuma[i] = dado1 + dado2;
-    document.write("array: " + arraySuma[i]);
 }
 
 // muestra array con resultado de las sumas de los dados
@@ -23,6 +21,16 @@ for (let i = 0;
     (i < arraySuma.length - 1); i++) {
     document.write(arraySuma[i] + "<br>");
 }
+
+
+
+
+// let dado2 = parseInt(6 * math.random() + 1);
+// if ((dado1 > 0 && dado1 <= 6) && (dado2 > 0 && dado2 <= 6)) {
+//     document.write("OK" + "<br>")
+// } else {
+//     document.write("MAL" + "<br>")
+// }
 
 // function tiradaDado(){
 //     var dado6caras = parseInt(6*Math.random()+1);
